@@ -1,9 +1,3 @@
-//
-//  PasshomeView.swift
-//  db
-//
-//  Created by 関琢磨 on 2023/01/14.
-//
 
 import SwiftUI
 

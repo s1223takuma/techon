@@ -1,9 +1,4 @@
-//
-//  BackgroundView.swift
-//  db
-//
-//  Created by 関琢磨 on 2023/02/13.
-//
+
 
 import SwiftUI
 

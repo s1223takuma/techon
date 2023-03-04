@@ -1,9 +1,4 @@
-//
-//  EditPassView.swift
-//  db
-//
-//  Created by 関琢磨 on 2023/02/09.
-//
+
 
 import SwiftUI
 import CoreData

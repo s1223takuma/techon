@@ -1,9 +1,3 @@
-//
-//  dbUITestsLaunchTests.swift
-//  dbUITests
-//
-//  Created by 関琢磨 on 2023/01/13.
-//
 
 import XCTest
 
