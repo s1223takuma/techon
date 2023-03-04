@@ -92,10 +92,13 @@ struct EditPassView: View {
                 Button(action:{
                     password = keychain[sitename] ?? ""
                 }){
-                    Image(systemName: "eye")
+                    VStack{
+                        Image(systemName: "eye")
+                        Text("表示")
+                    }
                 }
                 Button(action:{
-                                    UIPasteboard.general.string = pass.userid ?? ""
+                                    UIPasteboard.general.string = password
                                 }){
                                     Text("コピー")
                                 }.padding()

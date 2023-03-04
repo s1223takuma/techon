@@ -19,7 +19,7 @@ struct addpassView: View {
     var body: some View {
         VStack {
             HStack{
-                Text("サイトの名前")
+                Text("タイトル")
                     .padding()
                     .bold()
                 TextField("", text: $sitename)
@@ -93,14 +93,14 @@ struct addpassView: View {
     // 保存ボタン押下時の処理
     private func addPass() {
         let pass = Pass(context: viewContext)
+        if (sitename == ""){
+            sitename = "名前無し"
+        }
         pass.sitename = sitename
         pass.url = url
         pass.userid = siteid
         pass.createdAt = Date()
         pass.updatedAt = Date()
-        let fstsitename = sitename
-        let fsturl = url
-        let fstuserid = siteid
     // 生成したインスタンスをCoreDataに保存する
         try? viewContext.save()
         
